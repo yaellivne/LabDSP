@@ -18,7 +18,7 @@ def ArithmeticOperation(A, B, ShiftSize, IsAdder, DoSaturate):
     return r
     
 # main 
-part1 = True
+part1 = False
 # input values
 a0 = 1
 a1 = -1
@@ -42,10 +42,10 @@ if part1:
     int1 = ArithmeticOperation(a1, x1, __________, ___________, _________)
 else:
     # part 2 of the experiment
-    int0 = 0x7000
-    int1 = 0x2000
+    int0 = 0x14000
+    int1 = 0xE000
 # calculate y = a0*x0 + a1*x1. FILL IN THE MISSING PARAMETERS
-y = ArithmeticOperation(int0, int1, __________, ___________, _________)
+y = ArithmeticOperation(int0, int1, 0, 1, 1)
 
 print("int0 = " + str(int0) + " = " + format(Signed16u(int0), "=#06X"))
 print("int1 = " + str(int1) + " = " + format(Signed16u(int1), "=#06X"))
