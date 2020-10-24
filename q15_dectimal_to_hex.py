@@ -6,5 +6,5 @@ def compute_hex(fraction_input):
 
 
 if __name__ == '__main__':
-    user_input = -0.75
+    user_input = -1
     print(compute_hex(user_input))
